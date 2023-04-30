@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Session</title>
+    <!--BULMA-->
+    <link rel="stylesheet" href="./resources/UI/bulma.css">
+    <!--BULMA-->
+    <!--DEXIE-->
+    <script src="./resources/DATA/dexie.js" type="text/javascript" defer></script>
+    <!--DEXIE-->
+    <!--MAIN-->
+    <script src="./resources/main.js" defer></script>
+    <script src="./resources/StartSession.js" defer></script>
+    <!--MAIN-->
+
+
+
+</head>
+
+<body class="has-background-light">
+    <!--#region FULL WIDTH CONTENT-->
+    <div style="width: 100vw; height: 100vh;">
+
+        <!--#region MAIN CONTENT-->
+        <div class="container">
+
+            <!--#region BANNER-->
+            <div class="box has-background-primary">
+                <h1 class="title is-1 has-text-centered has-text-primary-light"><b
+                        class="has-text-primary-dark">Start</b> Session</h1>
+            </div>
+            <!--#endregion BANNER-->
+
+
+            <!--#region CHOOSE INSTRUCTOR-->
+
+            <div class="box" id="div_StSe_Start">
+
+                <!--#region Instructor-->
+                <div class="field">
+                    <label for="input_StSe_Instructor" class="label has-text-primary-dark"> Instructor
+                        <div class="select is-fullwidth is-primary">
+                            <select id="input_StSe_Instructor">
+                                <option>Select An Instructor</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+                <!--#endregion Instructor-->
+
+                <!--#region Set Name-->
+                <div class="field">
+                    <label for="input_StSe_SetName" class="label has-text-primary-dark"> Set Name
+                        <div class="select is-fullwidth is-primary">
+                            <select id="input_StSe_SetName">
+                                <option>Select A Set Name</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+                <!--#endregion Set Name-->
+
+                <!--#region Button Start-->
+                <div class="block">
+                    <button class="button is-primary has-text-primary-light is-fullwidth is-large"
+                        onclick="GetSetExercises();">
+                        <p><b class="has-text-primary-dark">Start</b> Sesh</p>
+                    </button>
+                </div>
+                <!--#endregion Button Start-->
+
+            </div>
+            <!--#endregion CHOOSE INSTRUCTOR-->
+
+            <!--#region SESSION TRACK-->
+
+            <div class="box" id="divSessionTracker">
+
+                <div class="notification is-primary">
+
+                    <div class="field">
+                        <label for="display_StSe_Instructor" class="label has-text-primary-light">
+                            <b class="has-text-primary-dark">Instructor:</b> <span
+                                id="display_StSe_Instructor">Will</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="display_StSe_SetName" class="label has-text-primary-light">
+                            <b class="has-text-primary-dark">Set Name:</b> <span id="display_StSe_SetName">Day 1</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="display_StSe_SetCount" class="label has-text-primary-light">
+                            <b class="has-text-primary-dark">Set:</b> <span id="display_StSe_SetCount">1</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="display_StSe_ExerciseName" class="label has-text-primary-light">
+                            <b class="has-text-primary-dark">Exercise:</b> <span id="display_StSe_ExerciseName">Bench
+                                Press</span>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="display_StSe_Rest" class="label has-text-primary-light">
+                            <b class="has-text-primary-dark">Rest:</b> <span id="display_StSe_Rest">60</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <!--TODO Create Progress Bar-->
+                <!--
+                <div class="box">
+                    <progress class="progress is-success" value="1" max="2"></progress>
+                </div>
+                -->
+                <!--TODO Create Progress Bar-->
+
+
+
+                <!--WEIGHT-->
+                <div class="field">
+                    <label for="input_StSe_Weight" class="label has-text-primary-dark"> Weight
+                        <div class="control">
+                            <input class="input is-primary" type="text" placeholder="10" id="input_StSe_Weight">
+                        </div>
+                    </label>
+                </div>
+                <!--WEIGHT-->
+                <!--REPS-->
+                <div class="field">
+                    <label for="input_StSe_Reps" class="label has-text-primary-dark"> Reps
+                        <div class="control">
+                            <input class="input is-primary" type="text" placeholder="10" id="input_StSe_Reps">
+                        </div>
+                    </label>
+                </div>
+                <!--REPS-->
+                <div class="block">
+                    <button class="button is-primary has-text-primary-light is-fullwidth is-large"
+                        onclick="NextExercise()">
+                        <p><b class="has-text-primary-dark">Start</b> Rest</p>
+                    </button>
+                </div>
+
+                <div class="box">
+                    <progress class="progress is-success" value="" max="" id="TimerBar"></progress>
+                    <button class="button is-link has-text-primary-light is-fullwidth is-large"
+                        onclick="StopTimer()">Skip</button>
+                </div>
+
+
+            </div>
+            <!--#endregion SESSION TRACK-->
+        </div>
+        <!--#endregion MAIN CONTENT-->
+    </div>
+    <!--#endregion FULL WIDTH CONTENT-->
+
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Exercise</title>
+    <!--BULMA-->
+    <link rel="stylesheet" href="./resources/UI/bulma.css">
+    <!--BULMA-->
+    <!--DEXIE-->
+    <script src="./resources/DATA/dexie.js" type="text/javascript" defer></script>
+    <!--DEXIE-->
+    <!--MAIN-->
+    <script src="./resources/main.js" defer></script>
+    <script src="./resources/AddExercise.js" defer></script>
+    <!--MAIN-->
+
+
+
+</head>
+
+<body class="has-background-light">
+    <!--#region FULL WIDTH CONTENT-->
+    <div style="width: 100vw; height: 100vh;">
+
+        <!--#region MAIN CONTENT-->
+        <div class="container">
+
+            <!--#region BANNER-->
+            <div class="box has-background-primary">
+                <h1 class="title is-1 has-text-centered has-text-primary-light"><b class="has-text-primary-dark">Add</b> Exercise</h1>
+            </div>
+            <!--#endregion BANNER-->
+
+            <!--#region FORM-->
+            <div class="box" id="div_NeEx_NewExercise">
+                
+                <!--INSTRUCTOR-->
+                <div class="field">
+                    <label for="input_NeEx_Instructor" class="label has-text-primary-dark"> Instructor
+                        <div class="control">
+                            <input class="input is-primary" type="text" placeholder="The Guy From Youtube" id="input_NeEx_Instructor">
+                        </div>
+                    </label>
+                </div>
+                <!--INSTRUCTOR-->
+
+
+                <!--SET NAME-->
+                <div class="field">
+                    <label for="input_NeEx_SetName" class="label has-text-primary-dark"> Set Name
+                        <div class="control">
+                            <input class="input is-primary" type="text" placeholder="Cool X-Treme Name" id="input_NeEx_SetName">
+                        </div>
+                    </label>
+                </div>
+                <!--SET NAME-->
+
+                <!--#region SETS REPS REST-->
+                <div class="box" id="div_NeEx_SetDetails">
+                    <!--EXERCISE NAME-->
+                    <div class="field">
+                        <label for="input_NeEx_Exercise" class="label has-text-primary-dark"> Exercise Name
+                            <div class="control">
+                                <input class="input is-primary" type="text" placeholder="Bench Press" id="input_NeEx_Exercise">
+                            </div>
+                        </label>
+                    </div>
+                    <!--SETS-->
+                    <!--SETS-->
+                    <div class="field">
+                        <label for="input_NeEx_Sets" class="label has-text-primary-dark"> Sets
+                            <div class="control">
+                                <input class="input is-primary" type="text" placeholder="3" id="input_NeEx_Sets">
+                            </div>
+                        </label>
+                    </div>
+                    <!--SETS-->
+                    <!--REPS-->
+                    <div class="field">
+                        <label for="input_NeEx_Reps" class="label has-text-primary-dark"> Reps
+                            <div class="control">
+                                <input class="input is-primary" type="text" placeholder="12" id="input_NeEx_Reps">
+                            </div>
+                        </label>
+                    </div>
+                    <!--REPS-->
+                    <!--REST-->
+                    <div class="field">
+                        <label for="input_NeEx_Rest" class="label has-text-primary-dark"> Rest
+                            <div class="control">
+                                <input class="input is-primary" type="text" placeholder="120" id="input_NeEx_Rest">
+                            </div>
+                        </label>
+                        <p class="help has-text-primary-dark">Input in seconds</p>
+                    </div>
+                    <!--REST-->
+                </div>
+                <!--#endregion SETS REPS REST-->
+
+                <!--#region BUTTONS-->
+                <div class="block">
+                    <button 
+                    class="button is-primary has-text-primary-light is-fullwidth is-large"
+                    onclick="AddExerciseToDB()">
+                        <p><b class="has-text-primary-dark">Add</b> Next</p>
+                    </button>
+               </div>
+               <div class="block">
+                <button 
+                    class="button is-primary has-text-primary-light is-fullwidth is-large"
+                    onclick="location.href='./index.html';">
+                        <p><b class="has-text-primary-dark">Go</b> Back</p>
+                </button>
+               </div>
+                <!--#region BUTTONS-->
+            </div>
+            <!--#endregion FORM-->
+        </div>
+        <!--#endregion MAIN CONTENT-->
+    </div>
+    <!--#endregion FULL WIDTH CONTENT-->
+
+
+</body>
+</html>

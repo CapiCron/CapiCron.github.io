@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Summary</title>
+    <!--BULMA-->
+    <link rel="stylesheet" href="./resources/UI/bulma.css">
+    <!--BULMA-->
+    <!--DEXIE-->
+    <script src="./resources/DATA/dexie.js" type="text/javascript" defer></script>
+    <!--DEXIE-->
+    <!--MAIN-->
+    <script src="./resources/main.js" defer></script>
+    <script src="./resources/SummaryPage.js" defer></script>
+    <!--MAIN-->
+</head>
+
+<body class="has-background-light">
+    <!--#region FULL WIDTH CONTENT-->
+    <div style="width: 100vw; height: 100vh;">
+        <!--#region MAIN CONTENT-->
+        <div class="container">
+            <!--#region BANNER-->
+            <div class="box has-background-primary">
+                <h1 class="title is-1 has-text-centered has-text-primary-light"><b
+                        class="has-text-primary-dark">Session</b> Summary</h1>
+            </div>
+            <!--#endregion BANNER-->
+            <div class="container">
+                <!--#region ADD EXERCISE-->
+                <div class="box">
+
+                    <div class="notification is-primary box">
+                        <h1 class="title is-4 has-text-centered has-text-primary-light"><b
+                                class="has-text-primary-dark">Total</b> Weight</h1>
+                        <p class="has-text-centered" ><b id="disp_Total_Weight"></b></p>
+                    </div>
+                    <div class="notification is-primary box">
+                        <h1 class="title is-4 has-text-centered has-text-primary-light"><b
+                                class="has-text-primary-dark">Total</b> Sets</h1>
+                        <p class="has-text-centered" ><b id="disp_Total_Sets"></b></p>
+                    </div>
+                    <div class="notification is-primary box">
+                        <h1 class="title is-4 has-text-centered has-text-primary-light"><b
+                                class="has-text-primary-dark">Total</b> Reps</h1>
+                        <p class="has-text-centered" ><b id="disp_Total_Reps"></b></p>
+                    </div>
+                    <div class="block">
+                        <button 
+                            class="button is-primary has-text-primary-light is-fullwidth is-large"
+                            onclick="location.href='./index.html';">
+                                <p><b class="has-text-primary-dark">All</b> Done!</p>
+                        </button>
+                       </div>
+
+                </div>
+            </div>
+        </div>
+        <!--#region MAIN CONTENT-->
+    </div>
+    <!--#endregion FULL WIDTH CONTENT-->
+
+</body>
+
+</html>

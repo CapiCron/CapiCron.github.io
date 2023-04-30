@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--BULMA-->
+    <link rel="stylesheet" href="./resources/UI/bulma.css">
+    <!--BULMA-->
+    <!--DEXIE-->
+    <script src="./resources/DATA/dexie.js" type="text/javascript" defer></script>
+    <!--DEXIE-->
+    <!--MAIN-->
+    <script src="./resources/main.js" defer></script>
+    <!--MAIN-->
+</head>
+
+<body class="has-background-light">
+    <!--#region FULL WIDTH CONTENT-->
+    <div style="width: 100vw; height: 100vh;">
+        <!--#region MAIN CONTENT-->
+        <div class="container">
+            <!--#region BANNER-->
+            <div class="box has-background-primary">
+                <h1 class="title is-1 has-text-centered has-text-primary-light"><b
+                        class="has-text-primary-dark">Exercise</b> Tracker</h1>
+            </div>
+            <!--#endregion BANNER-->
+            <div class="container">
+                <!--#region ADD EXERCISE-->
+                <div class="box">
+                    <button class="button is-primary has-text-primary-light is-fullwidth is-large"
+                        onclick="location.href='./AddExercise.html';">
+                        <p><b class="has-text-primary-dark">Add</b> Exercise</p>
+                    </button>
+                    <div class="notification has-background-primary-light has-text-primary">
+                        Add a new exercise to your storage.
+                    </div>
+                </div>
+                <!--#region ADD EXERCISE-->
+                <!--#region START SESSION-->
+                <div class="box">
+                    <button class="button is-primary has-text-primary-light is-fullwidth is-large"
+                        onclick="location.href='./StartSession.html';">
+                        <p><b class="has-text-primary-dark">Start</b> Session</p>
+                    </button>
+                    <div class="notification has-background-primary-light has-text-primary">
+                        Start A new Session and start tracking.
+                    </div>
+                </div>
+                <!--#region START SESSION-->
+                <!--#region CHECK STATS-->
+                <div class="box">
+                    <button class="button is-primary has-text-primary-light is-fullwidth is-large"
+                        onclick="location.href='./CheckStats.html';">
+                        <p><b class="has-text-primary-dark">Check</b> Stats</p>
+                    </button>
+                    <div class="notification has-background-primary-light has-text-primary">
+                        See some stats on your work outs
+                    </div>
+                </div>
+                <!--#region CHECK STATS-->
+            </div>
+        </div>
+        <!--#region MAIN CONTENT-->
+    </div>
+    <!--#endregion FULL WIDTH CONTENT-->
+
+</body>
+
+</html>

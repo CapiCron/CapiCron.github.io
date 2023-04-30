@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Stats</title>
+    <!--BULMA-->
+    <link rel="stylesheet" href="./resources/UI/bulma.css">
+    <!--BULMA-->
+    <!--DEXIE-->
+    <script src="./resources/DATA/dexie.js" type="text/javascript" defer></script>
+    <!--DEXIE-->
+    <!--MAIN-->
+    <script src="./resources/main.js" defer></script>
+    <script src="./resources/CheckStats.js" defer></script>
+    <!--MAIN-->
+</head>
+
+<body class="has-background-light">
+    <!--#region FULL WIDTH CONTENT-->
+    <div style="width: 100vw; height: 100vh;">
+        <!--#region MAIN CONTENT-->
+        <div class="container">
+            <!--#region BANNER-->
+            <div class="box has-background-primary">
+                <h1 class="title is-1 has-text-centered has-text-primary-light"><b
+                        class="has-text-primary-dark">Check</b> Stats</h1>
+            </div>
+            <!--#endregion BANNER-->
+            <div class="container">
+                <div class="box">
+                    <div class="box has-background-primary">
+                        <h4 class="title is-5 has-text-centered has-text-primary-light"><b
+                                class="has-text-primary-dark">Max</b> Weights</h4>
+                    </div>
+                    <table class="table is-fullwidth is-striped" id="Disp_ChSt_MaxWeight">
+                        <thead>
+                            <th>Exercise</th>
+                            <th>Max Weight</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <!--#region CONSISTANCY TABLE-->
+                <div class="box">
+                    <div class="box has-background-primary">
+                        <h4 class="title is-5 has-text-centered has-text-primary-light"><b
+                                class="has-text-primary-dark">Consistancy</b> Table</h4>
+                    </div>
+                    <div class="table-container">
+                        <b><p class="has-text-primary-dark has-text-centered" id="Disp_Month">month</p></b>
+                        <table class="table is-bordered is-striped is-fullwidth has-text-centered" id="Disp_ChSt_Consistancy">
+                            <tr>
+                                <td class="has-background-primary">1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+             
+                        </table>
+                      </div>
+                </div>
+                <!--#endregion CONSISTANCY TABLE-->
+                
+                <div class="box">
+                    <button class="button is-primary has-text-primary-light is-fullwidth is-large"
+                        onclick="location.href='./index.html';">
+                        <p><b class="has-text-primary-dark">All</b> Done</p>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <!--#region MAIN CONTENT-->
+    </div>
+    <!--#endregion FULL WIDTH CONTENT-->
+
+</body>
+
+</html>
