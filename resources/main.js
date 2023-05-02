@@ -279,6 +279,14 @@ function LTC(msg) {
 }
 //#endregion
 
+//Check if there are no exercises
+async function CheckDB(){
+    const ReturnedResult = await db.Exercises.toArray();
+    if (ReturnedResult.length == 0){
+        Dev_BulkAdd();
+    }
+}
+
 //#region CLEAR CONTROLS
 //CLEAR CONTROLS ON ADDED NEW EXERCISE
 function ClearControl() {
