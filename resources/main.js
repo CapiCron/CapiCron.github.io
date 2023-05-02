@@ -310,5 +310,4 @@ function ShowOrHide(Element) {
     }
 }
 //#endregion
-//Dev_BulkAdd()
-//Dev_CheckStats()
+CheckDB()
