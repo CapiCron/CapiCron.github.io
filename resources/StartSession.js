@@ -93,7 +93,7 @@ function NextExercise() {
 
         if (CompleteSetIndex > CompleteSet.length - 1) {
             alert("Session Completed");
-            window.location.href = "./index.html";
+            window.location.href = "./SummaryPage.html";
         } else {
             DisplayExercises();
         }
